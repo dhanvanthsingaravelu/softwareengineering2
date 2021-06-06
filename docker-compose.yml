@@ -6,14 +6,14 @@ services:
     build:
       context: ./seprojbackend
       dockerfile: ./Dockerfile
-    image: "sanjdoc/backend"
+    image: "sanjnadoc/backend"
     ports:
       - "8888:2500"
   frontend:
     build:
       context: ./seprojfrontend
       dockerfile: ./Dockerfile
-    image: "sanjdoc/frontend"
+    image: "sanjnadoc/frontend"
     ports:
       - "3000:3000"
     links:
