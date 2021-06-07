@@ -6,22 +6,14 @@ services:
     build:
       context: ./seprojbackend
       dockerfile: ./Dockerfile
-<<<<<<< 9e0d5f165b67b2473e212ce69fd2317dcb24c4f7
     image: "sanjnadoc/backend"
-=======
-    image: "backend"
->>>>>>> commit all
     ports:
       - "8888:2500"
   frontend:
     build:
       context: ./seprojfrontend
       dockerfile: ./Dockerfile
-<<<<<<< 9e0d5f165b67b2473e212ce69fd2317dcb24c4f7
     image: "sanjnadoc/frontend"
-=======
-    image: "frontend"
->>>>>>> commit all
     ports:
       - "3000:3000"
     links:
