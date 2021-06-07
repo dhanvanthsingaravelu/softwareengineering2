@@ -196,6 +196,7 @@ class Signin extends React.Component {
                         type="email"
                         name="email-address"
                         id="email-address"
+                        data-testid="emailaddress" 
                         onChange={this.onEmailChange}
                         />
                     </div>
@@ -206,6 +207,7 @@ class Signin extends React.Component {
                         type="password"
                         name="password"
                         id="password"
+                        data-testid="passwordb"
                         onChange={this.onPasswordChange}
                         />
                     </div>
@@ -218,6 +220,7 @@ class Signin extends React.Component {
                     type="tel"
                     name="phone"
                     id="phone"
+                    data-testid="phonechange"
                     onChange={this.onPhoneChange}
                     />
                     </div>
@@ -227,6 +230,8 @@ class Signin extends React.Component {
                             className="f6 link dim br1 ba ph3 pv2 mb2 dib dark-blue bg-transparent"
                             type="button"
                             value="Get OTP"
+                            data-testid="getotp"
+
                         />
                         </div>
                     
@@ -238,6 +243,7 @@ class Signin extends React.Component {
                             <div class="fl w-25 pa1">
                             <input
                             id="verify"    
+                            data-testid="clickverify" 
                             onClick={this.onClickVerify}
                             className="hide b pv2 input-reset ba b--black bg-transparent grow pointer f6 "
                             type="button"
@@ -261,6 +267,8 @@ class Signin extends React.Component {
                     className="f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                     type="submit"
                     value="Sign in"
+                    data-testid="submitsignin"
+
                 />
                 </div>
                 {/* <div className="lh-copy mt3">

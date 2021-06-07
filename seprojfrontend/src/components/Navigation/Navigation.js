@@ -62,11 +62,13 @@ class Navigation extends React.Component{
         // </nav>
         <header className="bg-black-60 w-100 ph3 pv3  ph4-m ph5-l" >
           <nav className="f6 fw6 ttu tracked ">
-          <Link to="/">
+          <Link data-testid="l1" to="/">
           <a
             className="link dim white dib mr3"
             href="#"
             title="Home"
+            data-testid="t1"
+
           >
           
             Room Occupancy Chart Generator App
@@ -74,13 +76,14 @@ class Navigation extends React.Component{
           
           </Link>
           
-          <div id='signinstat' className="hide">
+          <div data-testid="signinstat"  id='signinstat' className="hide">
             <a
               className="link dim white dib mr3"
               href="#"
               title="signout"
               onClick={this.signout}
-              
+              data-testid="signout"
+
               
             >Sign Out</a>
           

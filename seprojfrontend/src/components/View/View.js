@@ -75,6 +75,8 @@ class View extends React.Component {
                 <div className="" style={{textAlign:'center',marginTop:"6%"}}>
                     <Link to="subsetclass">
                         <input
+                        data-testid="dispcltimetable"
+
                             className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f2 blue dib"
                             type="button"
                             id="clt"
@@ -89,7 +91,8 @@ class View extends React.Component {
                     <div className="" style={{textAlign:'center',marginTop:"5%"}}>
                     <Link to="freeclass">
                         <input
-                            
+                        data-testid="dispproftimetable"
+
                             className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f2 blue dib"
                             type="button"
                             id="pt"
@@ -103,7 +106,8 @@ class View extends React.Component {
                         <div className="" style={{textAlign:'center',marginTop:"5%"}}>
                         <Link to="free"> 
                             <input
-                        
+                            data-testid="disproomtimetable"
+
                                 className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f2 blue dib"
                                 type="button"
                                 id="roc"
