@@ -8,6 +8,6 @@ RUN ls
 RUN npm install --production
 COPY . .
 
-EXPOSE 8855
+EXPOSE 8844
 
 CMD ["node", "server.js"]
