@@ -31,6 +31,7 @@ const db = knex({
       host : 'localhost',
       port: 5432,
       user : 'postgres',
+      passowrd : '1077',
       database : 'roomoccupancy',
     }
   });
