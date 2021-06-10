@@ -46,6 +46,20 @@ db.select('email','name').from('teachers').then(data=>{
     console.log(data);
 });
 
+
+app.get('/test',(req,res)=>{
+
+  db.select('email','name').from('teachers').then(data=>{
+
+    //console.log(data);
+
+    res.send(data)
+
+  });
+
+
+})
+
 app.post('/login', (req,res) => { login.handleLogin(req,res,db)} )
 app.post('/register', (req,res) => { register.handleRegister(req,res,db)}) //r
 app.post('/otp', (req,res) => { otp.handleotp(req,res)} )
