@@ -109,7 +109,7 @@ class Timetable extends React.Component {
             return alert("empty table")
         }
 
-        fetch('http://localhost:2500/storeTimetable',{
+        fetch('http://65.0.138.1:2500/storeTimetable',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

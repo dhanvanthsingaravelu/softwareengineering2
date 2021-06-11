@@ -61,7 +61,7 @@ class Register extends React.Component {
 
   
 
-    fetch('http://localhost:2500/otp',{
+    fetch('http://65.0.138.1:2500/otp',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -98,7 +98,7 @@ class Register extends React.Component {
       return alert("Re-enter OTP, OTP is 4 digits")
     }
 
-    fetch('http://localhost:2500/verifyotp',{
+    fetch('http://65.0.138.1:2500/verifyotp',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -161,7 +161,7 @@ class Register extends React.Component {
     }
     
 
-    fetch('http://localhost:2500/register', {
+    fetch('http://65.0.138.1:2500/register', {
       method:'post',
       headers: {'Content-Type':'application/json',
       'Accept': 'application/json'

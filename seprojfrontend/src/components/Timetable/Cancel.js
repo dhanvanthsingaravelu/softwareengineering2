@@ -10,7 +10,7 @@ class Cancel extends React.Component {
         var perm=document.getElementById("cancelperm").checked;
         //console.log(secnumber,email,perm)
         if(perm===true){
-            fetch('http://localhost:2500/cancelPermanent', {
+            fetch('http://65.0.138.1:2500/cancelPermanent', {
                 method:'post',
                 headers: {'Content-Type':'application/json',
                 'Accept': 'application/json'
@@ -37,7 +37,7 @@ class Cancel extends React.Component {
                   })
         }
         else{
-            fetch('http://localhost:2500/cancelTemp', {
+            fetch('http://65.0.138.1:2500/cancelTemp', {
                 method:'post',
                 headers: {'Content-Type':'application/json',
                 'Accept': 'application/json'

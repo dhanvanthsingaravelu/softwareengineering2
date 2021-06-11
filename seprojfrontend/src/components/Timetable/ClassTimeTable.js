@@ -38,7 +38,7 @@ class ClassTimeTable extends React.Component {
         const secnumber=document.getElementById('chclass').value
         if(!secnumber)
             return alert("Choose a Class")
-        fetch('http://localhost:2500/getClassTimetable',{
+        fetch('http://65.0.138.1:2500/getClassTimetable',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             

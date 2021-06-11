@@ -15,7 +15,7 @@ class TransferReservation extends React.Component {
         var roomnumber=document.getElementById("room").value;
         //console.log(secnumber,email,perm)
 
-        fetch('http://localhost:2500/onTransfer', {
+        fetch('http://65.0.138.1:2500/onTransfer', {
             method:'post',
             headers: {'Content-Type':'application/json',
             'Accept': 'application/json'

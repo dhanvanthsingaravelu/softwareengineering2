@@ -42,7 +42,7 @@ class subsetclass extends React.Component {
         const period=document.getElementById('period').value
         if(!(secnumber && day && period))
             return alert("Choose values in dropdowns correctly")
-        fetch('http://localhost:2500/getClassTimetable',{
+        fetch('http://65.0.138.1:2500/getClassTimetable',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             

@@ -18,7 +18,7 @@ class ReserveParticular extends React.Component {
         console.log(secnumber,email,perm)
 
         if(perm===true){
-            fetch('http://localhost:2500/reserveOnePeriod', {
+            fetch('http://65.0.138.1:2500/reserveOnePeriod', {
                 method:'post',
                 headers: {'Content-Type':'application/json',
                 'Accept': 'application/json'
@@ -46,7 +46,7 @@ class ReserveParticular extends React.Component {
                   })
         }
         else{
-            fetch('http://localhost:2500/reserveOnePeriodTemp', {
+            fetch('http://65.0.138.1:2500/reserveOnePeriodTemp', {
                 method:'post',
                 headers: {'Content-Type':'application/json',
                 'Accept': 'application/json'

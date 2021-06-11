@@ -69,7 +69,7 @@ class Free extends React.Component {
         const roomnumber=document.getElementById('chroom').value
         if(!roomnumber)
             return alert("Choose a room")
-        fetch('http://localhost:2500/getRoomOccchart',{
+        fetch('http://65.0.138.1:2500/getRoomOccchart',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             

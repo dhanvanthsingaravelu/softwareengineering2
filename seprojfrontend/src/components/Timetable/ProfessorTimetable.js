@@ -39,7 +39,7 @@ class ProfessorTimetable extends React.Component {
         if(!email)
             return alert("Choose a name from the list")
         //alert(email)
-        fetch('http://localhost:2500/getTeacherTimetable',{
+        fetch('http://65.0.138.1:2500/getTeacherTimetable',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             

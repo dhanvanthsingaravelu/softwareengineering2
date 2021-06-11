@@ -43,7 +43,7 @@ class Getdata extends React.Component {
     }
     componentDidMount(){
         
-        fetch('http://localhost:2500/getTeachers',{
+        fetch('http://65.0.138.1:2500/getTeachers',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             
@@ -80,7 +80,7 @@ class Getdata extends React.Component {
         })
 
 
-        fetch('http://localhost:2500/getTeachers',{
+        fetch('http://65.0.138.1:2500/getTeachers',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             
@@ -111,7 +111,7 @@ class Getdata extends React.Component {
         
 
 
-        fetch('http://localhost:2500/getTeachers',{
+        fetch('http://65.0.138.1:2500/getTeachers',{
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             

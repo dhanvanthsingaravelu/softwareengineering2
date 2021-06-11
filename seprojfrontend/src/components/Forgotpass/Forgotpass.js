@@ -39,7 +39,7 @@ class Forgotpass extends React.Component {
     console.log(password+phonenumber)
     
 
-    fetch('http://localhost:2500/changePassword', {
+    fetch('http://65.0.138.1:2500/changePassword', {
       method:'post',
       headers: {
         'Content-Type':'application/json'
@@ -108,7 +108,7 @@ class Forgotpass extends React.Component {
     
       
     
-        fetch('http://localhost:2500/getotpindb',{
+        fetch('http://65.0.138.1:2500/getotpindb',{
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -153,7 +153,7 @@ class Forgotpass extends React.Component {
           return alert("Invalid phone number")
         }
         
-        fetch('http://localhost:2500/verifyotp',{
+        fetch('http://65.0.138.1:2500/verifyotp',{
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
