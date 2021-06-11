@@ -28,12 +28,20 @@ const db = knex({
       ssl: true
     }*/
     connection: {
+      host : 'roomoccupancy.postgres.database.azure.com',
+      user : 'dhanvanth@roomoccupancy',
+      password : 'Thudu@123',
+      database : 'roomoccupancy',
+      ssl: true
+    }
+    /*
+    connection: {
       host : '3.108.61.161',
       port: 5432,
       user : 'postgres',
       password : '1077',
       database : 'roomoccupancy',
-    }
+    }*/
   });
 
 
