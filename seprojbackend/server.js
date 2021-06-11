@@ -49,14 +49,14 @@ db.select('email','name').from('teachers').then(data=>{
 
 
 app.get('/test',(req,res)=>{
+  res.send("Test success")
+  // db.select('email','name').from('teachers').then(data=>{
 
-  db.select('email','name').from('teachers').then(data=>{
+  //   //console.log(data);
 
-    //console.log(data);
+  //   res.send("data")
 
-    res.send("data")
-
-  });
+  // });
 
 
 })
