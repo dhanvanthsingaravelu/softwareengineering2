@@ -54,7 +54,7 @@ app.get('/test',(req,res)=>{
 
     //console.log(data);
 
-    res.send(data)
+    res.send("data")
 
   });
 
