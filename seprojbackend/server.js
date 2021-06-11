@@ -28,7 +28,7 @@ const db = knex({
       ssl: true
     }*/
     connection: {
-      host : 'localhost',
+      host : '3.108.61.161',
       port: 5432,
       user : 'postgres',
       password : '1077',
