@@ -1,13 +1,13 @@
-FROM node:12.18.3
+FROM node:14-slim
 
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY ["package.json", "package-lock.json", "./"]
-RUN ls
-RUN npm install --production
+COPY ./package.json ./
+
+RUN npm install
 COPY . .
 
-EXPOSE 8822
+EXPOSE 2500
 
 CMD ["node", "server.js"]
