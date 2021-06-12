@@ -45,7 +45,7 @@ const handleotp=(req,res) =>{
     var message_temp="Here is your OTP : "+rndotp
 
     console.log(message_temp)
-    //sendSMSviaFast2SMS(message_temp,phonenumber)
+    sendSMSviaFast2SMS(message_temp,phonenumber)
     
 
     res.json({
@@ -69,7 +69,7 @@ const handleotp=(req,res) =>{
     .from('teachers')
     .where('phonenumber','=',phonenumber)
     .then(data=>{
-      //console.log("  ddd  ",data)
+      console.log("  ddd  ",data)
       if(data.length>0){
         for(var i=0;i<4;i++){
           var temp=Math.floor(Math.random() * 10); 
@@ -81,7 +81,7 @@ const handleotp=(req,res) =>{
         var message_temp="Here is your OTP : "+rndotp
     
         console.log(message_temp)
-        //sendSMSviaFast2SMS(message_temp,phonenumber)
+        sendSMSviaFast2SMS(message_temp,phonenumber)
         console.log(data)
     
         res.json({
