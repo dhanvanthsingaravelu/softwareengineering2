@@ -20,13 +20,7 @@ const transferPeriod=require('./controllers/transfer')
 
 const db = knex({
     client: 'pg',
-    /*connection: {
-      host : 'roomoccupancy.postgres.database.azure.com',
-      user : 'dhanvanth_06@roomoccupancy',
-      password : 'Thudu@123',
-      database : 'roomoccupancy',
-      ssl: true
-    }*/
+    
     connection: {
       host : 'roomoccupancy.postgres.database.azure.com',
       user : 'dhanvanth@roomoccupancy',
